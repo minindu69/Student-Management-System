@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  /* background-color: red; */
+  background-color: rgb(235, 235, 235);
+  flex-grow: 1;
+}
+
+.container {
+  min-width: 400px;
+  margin-top: 16px;
+  backdrop-filter: blur(40px);
+  background-color: rgba(210, 217, 255, 0.5);
+  border-radius: 8px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.loading-animation{
+  /* display: none !important; */
+  width: 96%; 
+  /* background-color: rgba(189, 189, 255, 0.129); */
+}
+
+.table{
+    margin-top: 16px;
+}
+
+th, td{
+    vertical-align: middle;
+}
+
+.modaal{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.382);
+  /* background-color: rgba(167, 167, 167, 0.453); */
+  position: fixed;
+  backdrop-filter: blur(2px) opacity(60%) brightness(60%);
+}
+
+.hidden{
+  display: none;
+}
+
+.pop-up{
+  width: 540px;
+  min-width: max-content;
+  height: max-content;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pop-up-form{
+  position: relative;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+circle{
+  cursor: pointer;
+}
+
+.close-svg{
+  fill: rgb(203, 203, 203);
+  stroke: rgb(203, 203, 203);
+}
+
+/* .close-svg:hover{
+  fill: rgb(131, 131, 131);
+  stroke: rgb(131, 131, 131);
+} */
+
+.msg{
+  color: rgb(92, 92, 92);
+  /* background-color: yellow; */
+}
+
+.actions{
+  /* background-color: rgb(255, 132, 0); */
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+footer {
+  background-color: rgba(210, 217, 255, 0.892);
+}
